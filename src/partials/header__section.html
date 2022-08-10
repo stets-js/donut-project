@@ -1,0 +1,270 @@
+<header class="header container" id="header">
+  <div class="img-wrap">
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/header/h-donuts-dc-test.webp   1x,
+          ./images/header/h-donuts-dc-test2x.webp 2x
+        "
+        type="image/webp"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/header/h-donuts-dc-test.png   1x,
+          ./images/header/h-donuts-dc-test2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/header/h-donuts-tb-test.webp   1x,
+          ./images/header/h-donuts-tb-test2x.webp 2x
+        "
+        type="image/webp"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/header/h-donuts-tb-test.png   1x,
+          ./images/header/h-donuts-tb-test2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/header/h-donuts-mb-test.webp   1x,
+          ./images/header/h-donuts-mb-test2x.webp 2x
+        "
+        type="image/webp"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/header/h-donuts-mb-test.png   1x,
+          ./images/header/h-donuts-mb-test2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="header__donuts"
+        src="./images/header/h-donuts-mb-test.png"
+        alt="group of donuts"
+        width="120"
+        height="114"
+      />
+    </picture>
+  </div>
+
+  <div class="nav-wrapper">
+    <a class="logo logo__header" href="#header">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/header/logo-dc.webp   1x,
+            ./images/header/logo-dc2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/header/logo-dc.png   1x,
+            ./images/header/logo-dc2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 1279.98px)"
+          srcset="
+            ./images/header/logo-mb-tb.webp   1x,
+            ./images/header/logo-mb-tb2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <source
+          media="(max-width: 1279.98px)"
+          srcset="
+            ./images/header/logo-mb-tb.png   1x,
+            ./images/header/logo-mb-tb2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <img
+          src="./images/header/logo-mb-tb.png"
+          alt="company logo"
+          width="96"
+          height="50"
+          class="logo__img"
+        />
+      </picture>
+    </a>
+
+    <div class="navigation">
+      <ul class="navigation-list list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#about-us">About us</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#program">Program</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#speakers">Speakers</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#price">Price</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#reviews">Reviews</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__link" href="#kontacts">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h1 class="header__title title">Donut Masterclass with the Donut King</h1>
+
+  <h2 class="header__subtitle subtitle">Hosted by Eva Green</h2>
+
+  <a class="header__button button" href="#registration"
+    ><span>Register</span></a
+  >
+
+  <ul class="social-list header__social-list list">
+    <li class="social-list__item">
+      <a
+        class="social-list__link"
+        href="#"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        aria-label="twitter"
+      >
+        <svg class="social-list__icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a
+        class="social-list__link"
+        href="#"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        aria-label="instagram"
+      >
+        <svg class="social-list__icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a
+        class="social-list__link"
+        href="#"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        aria-label="facebook"
+      >
+        <svg class="social-list__icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
+  <div class="header__hidden container">
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="navigation-menu"
+      data-menu-button
+    >
+      <svg width="30" height="16">
+        <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+        <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="menu fade-in" data-menu>
+      <a class="logo logo__menu" href="#header">
+        <picture>
+          <source
+            media="(max-width: 1279.98px)"
+            srcset="
+              ./images/header/logo-menu-mb-tb.webp   1x,
+              ./images/header/logo-menu-mb-tb2x.webp 2x
+            "
+            type="image/webp"
+          />
+
+          <source
+            media="(max-width: 1279.98px)"
+            srcset="
+              ./images/header/logo-menu-mb-tb.png   1x,
+              ./images/header/logo-menu-mb-tb2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="logo__img"
+            src="./images/header/logo-menu-mb-tb.png"
+            alt="company logo"
+            width="190"
+            height="85"
+          />
+        </picture>
+      </a>
+
+      <ul class="menu__nav menu-list list" id="menu">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#about-us" data-link>About us</a>
+        </li>
+
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#program" data-link>Program</a>
+        </li>
+
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#speakers" data-link>Speakers</a>
+        </li>
+
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#price" data-link>Price</a>
+        </li>
+
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#reviews" data-link>Reviews</a>
+        </li>
+
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#kontacts" data-link>Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <a class="arrow-up" href="#header" aria-label="button  to move up ">
+    <svg class="arrow-up__icon" width="60" height="60">
+      <use class="icon-arrow-up" href="./images/icons.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+</header>

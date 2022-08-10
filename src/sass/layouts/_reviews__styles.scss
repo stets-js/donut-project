@@ -1,0 +1,205 @@
+.reviews-section {
+  position: relative;
+}
+
+.carousel {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 49px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 64px;
+  }
+
+  &__title {
+    font-family: 'Caveat Brush';
+    @include font(400, 24, 30, null);
+    text-align: center;
+    color: var(--main-text-color-black);
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 7px;
+    }
+    @media screen and (min-width: 1280px) {
+      @include font(400, 36, 45, null);
+      margin-bottom: 85px;
+    }
+  }
+}
+
+.slider-carousel {
+  margin-bottom: 20px;
+  &__subtitle {
+    text-align: center;
+    font-style: italic;
+    @include font(500, 14, 17, null);
+    color: var(--main-text-color-black);
+    margin-bottom: 8px;
+    @media screen and (min-width: 1280px) {
+      @include font(500, 16, 20, null);
+    }
+  }
+  &__text {
+    display: none;
+    text-align: center;
+    @include font(400, 16, 20, null);
+    color: var(--main-text-color-black);
+    @media screen and (min-width: 1280px) {
+      @include font(400, 18, 22, null);
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: auto;
+    cursor: pointer;
+  }
+}
+
+.rating {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 4px;
+  }
+  &__icon {
+    -webkit-animation: rotating 30s infinite linear;
+    -moz-animation: rotating 30s infinite linear;
+    -ms-animation: rotating 30s infinite linear;
+    -o-animation: rotating 30s infinite linear;
+    animation: rotating 30s infinite linear;
+  }
+
+  @-webkit-keyframes rotating {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes rotating {
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-ms-keyframes rotating {
+    to {
+      -ms-transform: rotate(360deg);
+    }
+  }
+  @-o-keyframes rotating {
+    to {
+      -o-transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.comments__text {
+  text-align: center;
+  @include font(400, 16, 20, null);
+  color: var(--main-text-color-black);
+  margin-bottom: 32px;
+  @media screen and (min-width: 1280px) {
+    @include font(400, 18, 22, null);
+  }
+}
+
+.slider-carousel__text--active {
+  display: block;
+}
+
+.reviews {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reviews--animation {
+  opacity: 0;
+}
+
+.slick-slide img {
+  margin-bottom: 8px;
+}
+
+.slick-slider {
+  width: 280px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1031px;
+  }
+}
+
+.slick-slide,
+.slick-slide[aria-hidden='true']:not(.slick-cloned)
+  ~ .slick-cloned[aria-hidden='true'] {
+  .slider-carousel__image {
+    width: 152px;
+
+    @media screen and (min-width: 768px) {
+      width: 152px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 288px;
+    }
+  }
+}
+
+.slick-center,
+.slick-slide[aria-hidden='true']:not([tabindex='-1'])
+  + .slick-cloned[aria-hidden='true'] {
+  .slider-carousel__image {
+    width: 280px;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+      margin-top: 76px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 394px;
+      margin-top: 143px;
+    }
+  }
+}
+
+.reviews-pagination {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--accent-color);
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 35px;
+    height: 1px;
+    margin-left: 12px;
+    vertical-align: middle;
+    background-color: currentColor;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 35px;
+    height: 1px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background-color: currentColor;
+  }
+}

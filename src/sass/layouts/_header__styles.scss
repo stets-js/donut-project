@@ -1,0 +1,116 @@
+.header {
+  position: relative;
+}
+
+.nav-wrapper {
+  display: flex;
+  padding-top: 16px;
+  @media screen and (min-width: $breakpoint-tab) {
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    padding-top: 46px;
+  }
+}
+
+// header text
+.header {
+  &__title {
+    width: 224px;
+    margin-bottom: 8px;
+
+    @include font(400, 30, 38, null);
+    text-align: center;
+    @media screen and (min-width: $breakpoint-tab) {
+      margin-left: 0;
+      text-align: left;
+      @media screen and (min-width: $breakpoint-desk) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__subtitle {
+    @include font(500, 16, 20, null);
+    margin-bottom: 32px;
+    @media screen and (min-width: $breakpoint-tab) {
+      margin-bottom: 20px;
+      margin-left: 0;
+      text-align: left;
+    }
+
+    @media screen and (min-width: $breakpoint-desk) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+// main navigation desc
+.navigation {
+  display: none;
+  @media screen and (min-width: $breakpoint-desk) {
+    display: block;
+
+    &-list {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+.navigation-list__link {
+  position: relative;
+  display: block;
+  @include font(400, 18, 22, none);
+  text-align: center;
+  color: currentColor;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  @include transition(color, 300ms, 0);
+
+  &::after {
+    content: ' ';
+    display: block;
+    width: 120%;
+    height: 100%;
+    background-color: transparent;
+
+    border: 2px solid #876655;
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    @include transition(opacity, 300ms, 0);
+  }
+
+  &:hover,
+  &:focus {
+    color: #876655;
+  }
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+}
+// donut decoration
+.header__donuts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media screen and (min-width: $breakpoint-tab) and (max-width: 1279.98px) {
+    left: 289px;
+    height: 519px;
+    width: 380px;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    width: 716px;
+    height: 946px;
+    left: auto;
+    right: 0;
+  }
+}

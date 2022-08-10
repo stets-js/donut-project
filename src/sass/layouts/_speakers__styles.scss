@@ -1,0 +1,179 @@
+/* SPEAKERS section */
+.speakers-bg {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767.98px) {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../images/speakers/sp-splash-mb.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/speakers/sp-splash-mb2x.png);
+    }
+  }
+}
+
+.speakers__container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media screen and (min-width: $breakpoint-tab) {
+    background-image: url(../images/speakers/sp-splash-tb.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/speakers/sp-splash-tb2x.png);
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    background-image: url(../images/speakers/sp-splash-dc.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/speakers/sp-splash-dc2x.png);
+    }
+  }
+}
+
+.speakers__box {
+  border-radius: 20px;
+  padding-bottom: 29px;
+
+  @media screen and (min-width: $breakpoint-tab) {
+    padding-bottom: 40px;
+  }
+}
+
+.speakers__title {
+  font-family: Caveat Brush;
+  @include font(400, 24, 30, null);
+  color: var(--main-text-color-black);
+  text-align: center;
+
+  @media screen and (min-width: $breakpoint-desk) {
+    @include font(400, 36, 45, null);
+  }
+}
+
+.speakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 20px;
+  align-items: flex-start;
+  padding-top: 82px;
+
+  @media screen and (max-width: 767.98px) {
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $breakpoint-tab) {
+    padding-top: 122px;
+    flex-wrap: nowrap;
+    gap: 32px 0;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $breakpoint-desk) {
+    padding-top: 179px;
+    gap: 100px 0;
+    justify-content: space-around;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__pic {
+    margin: 0;
+    margin-bottom: 12px;
+    border-radius: 50%;
+
+    @media screen and (min-width: $breakpoint-tab) {
+      margin-bottom: 20px;
+
+      width: 152px;
+      height: 152px;
+    }
+
+    @media screen and (min-width: $breakpoint-desk) {
+      margin-bottom: 16px;
+
+      width: 181px;
+      height: 181px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: calc(50% - 10px);
+
+    @media screen and (min-width: $breakpoint-tab) {
+      max-width: 152px;
+    }
+
+    @media screen and (min-width: $breakpoint-desk) {
+      max-width: 181px;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.03);
+      box-shadow: 0px 0px 5px 3px rgba(171, 129, 108, 0.38);
+      @include transition(box-shadow transform, 300ms, 0s);
+      border-radius: 25px;
+      border-top-left-radius: 89px;
+      border-top-right-radius: 89px;
+    }
+  }
+
+  &__subtitle {
+    font-family: Montserrat, sans-serif;
+    @include font(600, 16, 20, null);
+    color: var(--main-text-color-black);
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $breakpoint-tab) {
+      margin-bottom: 20px;
+
+      @include font(600, 16, 22, null);
+    }
+  }
+
+  &__desc {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    @include font(500, 12, 15, null);
+    color: var(--main-text-color-black);
+    text-align: center;
+
+    @media screen and (max-width: 767.98px) {
+      max-width: 130px;
+    }
+
+    @media screen and (min-width: $breakpoint-tab) {
+      @include font(500, 14, 17, null);
+
+      width: auto;
+    }
+    @media screen and (min-width: $breakpoint-desk) {
+      @include font(500, 16, 20, null);
+    }
+  }
+}

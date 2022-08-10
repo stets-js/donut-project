@@ -1,0 +1,55 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Caveat Brush;
+  @include font(400, 18, 23, null);
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  width: 145px;
+  height: 40px;
+
+  border: none;
+  border-radius: 25px;
+
+  @include transition-two(color, opacity, 2500ms, null);
+
+  &:hover,
+  &:focus {
+    color: #fffffe;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 37, 32, 0.8),
+      rgb(203, 165, 129, 1)
+    );
+  }
+}
+
+.header__button {
+  text-decoration: none;
+  padding: 8px 44px;
+  text-align: center;
+
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $breakpoint-tab) {
+    @include font(400, 24, 30, none);
+    width: 158px;
+    height: 45px;
+    margin-bottom: 12px;
+    margin-left: 0;
+  }
+  @media screen and (min-width: $breakpoint-desk) {
+    width: 158px;
+    height: 45px;
+    margin-bottom: 24px;
+  }
+}

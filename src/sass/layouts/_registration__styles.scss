@@ -1,0 +1,325 @@
+.registration-section {
+  padding-top: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+  }
+}
+
+.registration-section__tumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 280px;
+
+  padding: 32px 8px;
+  margin: 0 auto;
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+}
+
+.registration-section__tablet {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    width: 704px;
+    height: 234px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+      4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 150px 150px;
+    padding: 40px 60px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 822px;
+    height: 246px;
+    padding: 40px 104px;
+  }
+}
+
+.registration-section__title {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 1.8;
+  }
+}
+
+.registration-section__date {
+  width: 114px;
+  height: 44px;
+  margin-bottom: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  color: var(--main-text-color-black);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90px;
+    align-items: flex-end;
+    text-align: right;
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    flex-basis: 127px;
+    margin-bottom: 0px;
+  }
+}
+
+.form {
+  text-align: center;
+}
+
+.registration-section__form {
+  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    flex-grow: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 237px;
+    border-left: 1px solid rgba(171, 129, 108, 0.5);
+    padding-left: 24px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 32px;
+  }
+}
+
+.form__title {
+  padding-top: 8px;
+  margin-bottom: 20px;
+  border-top: 1px solid rgba(171, 129, 108, 0.5);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--main-text-color-black);
+
+  @media screen and (min-width: 768px) {
+    border-top: none;
+    width: 237px;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 234px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+}
+
+.field {
+  position: relative;
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  // @media screen and (max-width: 767px) {
+  //     margin-bottom: 22px;
+  //   &--margin {
+  //       margin-bottom: 0;
+  //     }}
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.field__input {
+  width: 100%;
+
+  background-color: #fffff9;
+  outline: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid var(--accent-color);
+
+  &:not(:placeholder-shown):invalid {
+    background-color: #fcf3f3;
+  }
+  &:not(:placeholder-shown):valid {
+    background-color: #d1fad1;
+  }
+}
+
+input::placeholder {
+  font-family: 'Montserrat';
+  @include font(400, 16, 20, null);
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.registration-section__btn {
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-left: 28px;
+    margin-bottom: 0;
+
+    padding: 8px 45px;
+    width: 158px;
+    height: 45px;
+  }
+}
+
+// Background img
+
+.registration-section__donut {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    position: absolute;
+    top: -93px;
+    left: -32px;
+    z-index: -1;
+    animation: rotate 3000ms infinite 3000ms;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(30deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -69px;
+    left: -117px;
+    transform: rotate(341deg);
+  }
+}
+
+.registration-section__confetti {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    position: absolute;
+    bottom: -164px;
+    right: -34px;
+    z-index: -1;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -307px;
+    right: -229px;
+  }
+}
+
+// ICONS & Validation
+
+//----input text sliding up
+.field__name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  transform: translate(0) scale(1);
+
+  @include font(400, 16, 20, null);
+  color: rgba(171, 129, 108, 0.5);
+  @include transition-two(color, transform, 300ms, null);
+}
+
+.field__input:not(:placeholder-shown) + .field__name {
+  transform: translate(-10%, -100%) scale(0.8);
+  color: inherit;
+}
+
+//----/input text sliding up
+.info-icon {
+  position: absolute;
+  bottom: 15%;
+  right: 5px;
+  opacity: 1;
+}
+
+.error-icon,
+.success-icon {
+  opacity: 0;
+  @include transition(opacity, 300ms, null);
+  fill: #eb0000;
+}
+
+.field__input:not(:placeholder-shown):invalid ~ .error-icon {
+  opacity: 1;
+  fill: #eb0000;
+}
+
+.field__input:not(:placeholder-shown):invalid ~ .info-icon .error-icon {
+  opacity: 1;
+  fill: #eb0000;
+}
+
+.field__input:not(:placeholder-shown):valid ~ .info-icon .success-icon {
+  opacity: 1;
+  fill: #109e1b;
+}

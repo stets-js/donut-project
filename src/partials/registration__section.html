@@ -1,0 +1,145 @@
+<section class="registration-section" id="registration">
+  <div class="container registration-section__tumb">
+    <h2 class="registration-section__title title">Registration</h2>
+    <div class="registration-section__tablet">
+      <p class="registration-section__date">
+        <time class="registration-section__time" datetime="2023-05-23 11:00">
+          May 23, 11:00</time
+        >
+        New York
+      </p>
+
+      <form class="form registration-section__form" action="submit">
+        <p class="form__title">
+          Apply your personal info for&nbsp;registration
+        </p>
+
+        <label class="field">
+          <input
+            class="field__input"
+            type="text"
+            name="name"
+            placeholder="&nbsp;"
+            required
+            minlength="2"
+            pattern="[a-zA-Z]+$"
+            title="Username must be at least 2 letter characters in length."
+          />
+          <span class="field__name">Your name</span>
+          <svg class="info-icon" width="15" height="15">
+            <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+            <use
+              class="success-icon"
+              href="./images/icons.svg#icon-happy"
+            ></use>
+          </svg>
+        </label>
+
+        <label class="field"
+          ><input
+            class="field__input"
+            type="tel"
+            name="tel"
+            placeholder="&nbsp;"
+            required
+            pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
+            title="Please enter at least 11 characters 1 (555) 555-5555"
+          />
+          <span class="field__name">Phone number</span>
+          <svg class="info-icon" width="15" height="15">
+            <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+            <use
+              class="success-icon"
+              href="./images/icons.svg#icon-happy"
+            ></use>
+          </svg>
+        </label>
+
+        <label class="field"
+          ><input
+            class="field__input"
+            type="email"
+            name="email"
+            required
+            placeholder="&nbsp;"
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            title="Please enter in format my@donut.com"
+          />
+          <span class="field__name">Email</span>
+          <svg class="info-icon" width="15" height="15">
+            <use class="error-icon" href="./images/icons.svg#icon-angry"></use>
+            <use
+              class="success-icon"
+              href="./images/icons.svg#icon-happy"
+            ></use>
+          </svg>
+        </label>
+      </form>
+      <button
+        class="button registration-section__btn"
+        type="submit"
+        aria-label="submit-button"
+      >
+        Register
+      </button>
+      <picture class="registration-section__donut">
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/registration/reg-donut-tb.webp   1x,
+            ./images/registration/reg-donut-tb2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/registration/reg-donut-tb.png   1x,
+            ./images/registration/reg-donut-tb2x.png 2x
+          "
+          type="image/png"
+        />
+        <img src="./images/registration/reg-donut-tb.png" alt="donut" />
+      </picture>
+      <picture class="registration-section__confetti">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/registration/reg-confetti-dc.webp   1x,
+            ./images/registration/reg-confetti-dc2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/registration/reg-confetti-dc.png   1x,
+            ./images/registration/reg-confetti-dc2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/registration/reg-confetti-tb.webp   1x,
+            ./images/registration/reg-confetti-tb2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/registration/reg-confetti-tb.png   1x,
+            ./images/registration/reg-confetti-tb2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <img src="./images/registration/reg-confetti-tb.png" alt="confetti" />
+      </picture>
+    </div>
+  </div>
+</section>
