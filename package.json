@@ -1,18 +1,18 @@
 {
-  "name": "parcel-project-template",
+  "name": "donut-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://MaksymenkoMaksym.github.io/junior-crew",
+  "homepage": "https://github.com/stets-js/donut-project.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /junior-crew/"
+    "build": "parcel build src/*.html --public-url /donut-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/stets-js/donut-project.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Junior Crew",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
